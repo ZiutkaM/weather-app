@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#dcf9ff, #274c77);
+  font-family: sans-serif;
+  color: white;
+}
+h1 {
+  color: black;
+}
+
+.location,
+.temperature,
+.icon {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.temperature {
+  flex-direction: column;
+  height: 30vh;
+}
+.location {
+  color: #001219;
+  height: 20vh;
+}
+.icon {
+  height: 15vh;
+}
+.degree {
+  display: flex;
+  align-items: center;
+}
+
+.degree span {
+  margin: 10px;
+  font-size: 50px;
+}
+.degree h2 {
+  font-size: 60px;
+}
+
+#location-input {
+  padding: 10px;
+  font-size: 20px;
+  width: 60%;
+}
+#button {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 1em;
+  border-style: solid black;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem 1.3rem;
+  text-align: center;
+}
+#button:hover {
+  background-color: #274c77;
+  color: white;
+  box-shadow: #3568a1 0 -12px 6px inset;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    width: 100%;
+  }
+  .location,
+  .temperature,
+  .icon {
+    width: 90%;
+  }
+  #button {
+    padding: 1rem 1rem;
+    font-size: 16px;
+  }
+  #location-input {
+    font-size: 16px;
+    width: 50%;
+  }
+}
